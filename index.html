@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>75 Hard Challenge Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <h1>💪 75 Hard Challenge Tracker</h1>
+        <h3 id="dayCounter">Day 1 of 75 (1.3% complete)</h3>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">1.3%</div>
+        </div>
+
+        <hr/>
+
+        <h2>Today's Tasks:</h2>
+        <ul id="taskList">
+            <li>
+                <input type="checkbox" id="task1" onchange="checkTask(this)">
+                <label for="task1">Follow a diet (no cheat meals)</label>
+            </li>
+            <li>
+                <input type="checkbox" id="task2" onchange="checkTask(this)">
+                <label for="task2">Drink a gallon of water</label>
+            </li>
+            <li>
+                <input type="checkbox" id="task3" onchange="checkTask(this)">
+                <label for="task3">Exercise for 45 minutes</label>
+            </li>
+            <li>
+                <input type="checkbox" id="task4" onchange="checkTask(this)">
+                <label for="task4">Read 10 pages of a non-fiction book</label>
+            </li>
+            <li>
+                <input type="checkbox" id="task5" onchange="checkTask(this)">
+                <label for="task5">Take a progress picture</label>
+            </li>
+        </ul>
+
+        <div class="task-counter">
+            Tasks completed: <span id="completedCount">0</span> / 5
+        </div>
+
+        <button class="complete-day-btn" onclick="completeDay()">
+            Mark Day Complete ✓
+        </button>
+
+        <div class="quote">
+            "The only person you are destined to become is the person you decide to be."
+            <br/>— Ralph Waldo Emerson
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
