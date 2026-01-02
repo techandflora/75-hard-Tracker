@@ -67,6 +67,7 @@ function completeDay() {
     }
 }
 
-// === LOG TO CONSOLE ===
+
 console.log('75 Hard Challenge Tracker loaded! 💪');
+
 
